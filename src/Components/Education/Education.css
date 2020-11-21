@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.education {
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+}
+
+.education > h4 {
+    color: aliceblue;
+    padding: 2rem;
+    font-size: 25px;
+    font-family: 'Amatic SC', cursive;
+}
+.education > h2 {
+    color: aliceblue;
+    padding-left: 2rem;
+    font-size: 35px;
+    font-family: 'BenchNine', sans-serif;
+    padding-bottom: 2rem;
+}
+
+.accordion_panels {
+    margin-right: 15rem;
+    margin-left: 15rem;
+}
+
+.dropdown {
+    color: #ffe6ff !important;
+}
+
+.education_heading {
+    font-weight: 550 !important;
+    color: #ffe6ff !important;
+}
+
+.education_years {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ffe6ff;
+}
+
+.accordion {
+    background-color: #330010 !important;
+    border-radius: 10px !important;
+    margin-top: 1rem !important;
+    -webkit-box-shadow: 10px 10px 60px -28px rgba(255,230,255,1)!important;
+    -moz-box-shadow: 10px 10px 60px -28px rgba(255,230,255,1)!important;
+    box-shadow: 10px 10px 60px -28px rgba(255,230,255,1)!important;
+}
+
+.institution_about {
+    color: #ffb3d9;
+    padding-top: 1rem;
+    font-size: 1.15rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.MuiTypography-body1 {
+    line-height: 1 !important;
+}
+ 
+a {
+    text-decoration: none;
+    color: wheat;
+    font-weight: 600;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    .accordion_panels {
+        margin: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .accordion_panels {
+        margin: 2rem;
+    }
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+{
+    .education {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: black;
+    }
+}

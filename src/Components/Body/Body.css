@@ -1,0 +1,46 @@
+.starfield {
+    width: 80%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .starfield {
+        width: 100%;
+        display: none;
+    }
+
+    .sidebarItem > .MuiSvgIcon-root {
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+    } 
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .starfield {
+        width: 100%;
+        display: none;
+    }
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+{
+    .starfield {
+        width: 130%;
+        display: none;
+    }
+
+}
+
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    .starfield {
+        width: 120%;
+        display: none;
+    }
+
+}
+

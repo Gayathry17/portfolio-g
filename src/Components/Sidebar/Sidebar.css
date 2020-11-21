@@ -1,0 +1,21 @@
+.sidebar {
+    padding-top: 100px;
+    position: fixed;
+    z-index: 100;
+    
+}
+
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+
+
+  @media screen and (max-width: 992px) {
+    .sidebar {
+        display: none;
+    }
+  }

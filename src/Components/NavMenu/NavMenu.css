@@ -1,0 +1,22 @@
+.nav_toggler {
+    color: #ffb3d9 !important;
+}
+
+.navmenu {
+    overflow: hidden !important;
+    height: 100vh;
+}
+
+.MuiDrawer-paper {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    overflow: hidden !important;
+    background-color: #1a1a1a !important;
+}
+
+.drawer_img {
+    width: 250px;
+    height: auto;
+}

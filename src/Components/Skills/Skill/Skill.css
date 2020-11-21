@@ -1,0 +1,106 @@
+.skill {
+    display: flex; 
+    background: darkslategrey;
+    margin-bottom: 10px;
+    height: auto;
+    margin-left: 5rem;
+    margin-right: 5rem; 
+    background-color: #292929;
+    border-radius: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.24);
+    border: 2px solid rgba(7, 7, 7, 0.12);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.skill:hover > .skill_icon > .icon {
+    background-position: -120px;
+    transition: all 0.3s ease;
+    color: pink;
+}
+
+.skill:hover {
+    /* height: 216px; */
+}
+
+.skill > .skill_details > p {
+    font-weight: 500;
+    color: pink;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.skill > .skill_details > h3 {
+    color: #ff4848;
+    font-family: 'Niconne', cursive;
+    font-style: 1.45rem;
+    line-height: 10px;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+.skill_icon {
+    padding: 1rem;
+}
+
+.skill_icon > .icon {
+    color: black;
+    background: linear-gradient(90deg,#ff7e7e 0%,#ff4848 40%,rgba(0, 0, 0, 0.28) 60%);
+    transition: all 0.8s ease;
+    background-position: 0px;
+    background-size: 200px;
+}
+
+.skill_details {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.skill_details > p {
+    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-right: 1rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .skill {
+        margin-left: 2rem;
+        margin-right: 2rem; 
+    }
+}
+
+
+
+  @media screen and (max-width: 992px) {
+    .skill {
+        margin-left: 2rem;
+        margin-right: 2rem; 
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+  and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+  {
+    .skill_details > p {
+        padding-bottom: 15px;
+        padding-top: 1px !important;
+        padding-right: 1rem;
+    }
+    .skill_details > h3 {
+        padding-top: 0;
+    }
+    .skill > .skill_details > h3 {
+        padding-top: 1rem;
+    }
+  }
+
+  @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    .skill_details > p {
+        padding-bottom: 15px;
+        padding-top: 0;
+        padding-right: 1rem;
+    }
+  }

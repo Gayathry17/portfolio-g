@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+.about {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.about > h4 {
+    color: aliceblue;
+    padding: 2rem;
+    font-size: 25px;
+    font-family: 'Amatic SC', cursive;
+}
+.about > h2 {
+    color: aliceblue;
+    padding-left: 2rem;
+    font-size: 35px;
+    font-family: 'BenchNine', sans-serif;
+}
+
+.about_container {
+    display: flex;
+}
+
+.about_left {
+    flex: 0.35;
+}
+
+.about_left > p {
+    text-align: justify;
+    padding: 1.5rem;
+    font-size: 1.125em;
+    font-weight: 600;
+    color: #ff6699;
+    letter-spacing: 0.055rem;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.about_left > img {
+    height: 500px;
+    width: 100%;
+}
+
+.about_right > p {
+    text-align: justify;
+    padding: 1.5rem;
+    font-size: 1.125em;
+    font-weight: 600;
+    color: #ff6699;
+    letter-spacing: 0.055rem;
+    font-family: 'Architects Daughter', cursive;
+}
+
+.about_center {
+    margin-top: 0rem;
+    flex: 0.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_center > .about_icon {
+    height: 220px;
+    width: 220px;
+    margin: 1rem;
+    background-color: #ff6699;
+    border-radius:50%;
+    box-shadow: 0 0 0 5px #ff6699;
+    animation: pulse-red 2s infinite;
+}
+
+
+@keyframes pulse-red {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(255, 102, 153, 0.7);
+    }
+    
+    50% {
+		transform: scale(1);
+		box-shadow: 0 0 0 30px rgba(255, 102, 153, 0.2);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 30px rgba(255, 102, 153, 0);
+	}
+	
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(255, 102, 153, 0);
+	}
+}
+
+.about_right {
+    flex: 0.35;
+}
+
+.about_right > img {
+    height: 500px;
+    width: 100%;
+}
+
+ 
+@media screen and (max-width: 600px) {
+    .about_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about_center > .about_icon {
+        margin: 2rem;
+        height: 200px !important;
+        width: 200px !important;
+    }
+    .about_center {
+        margin-top: 0;
+    }
+    .about_right {
+        margin-top: 0;
+    }
+    .about_right > img {
+        display: none;
+    }
+    .about_left > img {
+        display: none;
+    }
+}
+
+
+
+  @media screen and (max-width: 992px) {
+    .about_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about_center > .about_icon {
+        margin: 2rem;
+        height: 200px !important;
+        width: 200px !important;
+    }
+    .about_center {
+        margin-top: 0;
+    }
+    .about_right {
+        margin-top: 0;
+    }
+    .about_right > img {
+        display: none;
+    }
+    .about_left > img {
+        display: none;
+    }
+  }
+
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) 
+  and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71)
+  {
+    .about {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+  }
+
+
+

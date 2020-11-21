@@ -1,25 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './Components/Sidebar/Sidebar';
+import Body from './Components/Body/Body';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import NavMenu from './Components/NavMenu/NavMenu';
+
 
 function App() {
+
+  console.log("%cMade with 💚 by HRT", "color:#ff66a3; font-size:30px");
+  console.log = console.warn = console.error = () => {};
+  console.error('Something bad happened.');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Router>
+    <div className="nav">
+      <NavMenu />
     </div>
+    
+    <div className="App">
+        <Route path="/">
+          <div className="app_sidebar">
+            <Sidebar />
+          </div>
+          <div className="app_body">
+            <Body />
+          </div>
+        </Route>
+        
+    </div>
+    </Router>
+    </>
   );
 }
 
